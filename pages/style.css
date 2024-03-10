@@ -55,6 +55,7 @@ body {
 .carousel .list .item .content .title {
     color: #CD7F32;
 }
+/* Carousel Efects */
 .carousel .list .item:nth-child(1) .author,
 .carousel .list .item:nth-child(1) .title,
 .carousel .list .item:nth-child(1) .des,
