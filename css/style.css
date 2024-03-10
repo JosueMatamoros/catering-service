@@ -1,0 +1,17 @@
+
+/* Services style */
+.card-header-services {
+    background-color: #f7f7f7;
+    height: 90px;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto también se centre, si es necesario */
+}
+.card-services {
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
