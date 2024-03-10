@@ -1,0 +1,93 @@
+body {
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Carousel */
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel .list .item .content::before {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    right: 44%;
+    bottom: 0%;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+}
+
+
+.carousel .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-57%);
+    padding-right: 30%;
+    color: #fff;
+    text-shadow: 0 5px 10px #004;
+}
+
+.carousel .list .item .content .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.carousel .list .item .content .title,
+.carousel .list .item .content .topic {
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+}
+
+.carousel .list .item .content .title {
+    color: #CD7F32;
+}
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .des,
+.carousel .list .item:nth-child(1) .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.3s 0.5s linear 1 forwards
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+    
+}
+
+.carousel .list .item:nth-child(1) .author{
+    animation-delay: 1.2s;
+}
+
+
+.carousel .list .item:nth-child(1) .title{
+    animation-delay: 1.4s;
+}
+
+
+.carousel .list .item:nth-child(1) .des{
+    animation-delay: 1.6s;
+}
+
+.carousel .list .item:nth-child(1) .buttons{
+    animation-delay: 1.8s;
+}
