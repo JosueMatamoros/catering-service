@@ -36,3 +36,30 @@ function showNotification(message) {
         notificationElement.classList.remove('show');
     }, 3000);
 }
+// Calendar script 
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        themeSystem: 'bootstrap', 
+        initialView: 'dayGridMonth',
+        events: [
+            { title: 'Evento 1', date: '2024-03-01', extendedProps: { description: 'Descripción del Evento 1' } },
+            { title: 'Evento 2', date: '2024-03-02', extendedProps: { description: 'Descripción del Evento 2' } },
+            { title: 'Evento 3', date: '2024-03-03', extendedProps: { description: 'Descripción del Evento 3' } },
+            { title: 'Evento 4', date: '2024-03-05', extendedProps: { description: 'Descripción del Evento 4' } },
+            { title: 'Evento 5', date: '2024-03-05', extendedProps: { description: 'Descripción del Evento 5' } },
+            { title: 'Evento 6', date: '2024-03-15', extendedProps: { description: 'Descripción del Evento 6' } },
+            { title: 'Evento 7', date: '2024-03-20', extendedProps: { description: 'Descripción del Evento 7' } }
+           
+        ],
+        eventClick: function(info) {
+            var eventObj = info.event;
+            $('#eventDetailsModalLabel').text(eventObj.title);
+            $('.modal-body').text(eventObj.extendedProps.description);
+            $('#eventDetailsModal').modal('show');
+        }
+    });
+
+    calendar.render();
+});
