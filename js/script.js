@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Selecciona todos los botones con la clase 'btn-request'
     const requestButtons = document.querySelectorAll('.btn-request');
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
 function showNotification(message) {
     // Crear el div de la notificación si aún no existe
