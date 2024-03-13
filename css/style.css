@@ -7,6 +7,15 @@ header {
     width: 100%;
     height: 100vh; 
 }
+.header img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; /* Insert the image behind all other elements */
+}
   
 .header video {
     width: 100%; 
