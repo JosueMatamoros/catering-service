@@ -1,148 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Font awesome--> 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Custom JS -->
     <script src="../js/script.js"></script>
     <!-- Full Calendar -->
-    <link href='https://unpkg.com/fullcalendar@5/main.min.css' rel='stylesheet' />
-    <script src='https://unpkg.com/fullcalendar@5/main.min.js'></script>
-    <script src='https://unpkg.com/@fullcalendar/daygrid/main.min.js'></script>
+    <link
+      href="https://unpkg.com/fullcalendar@5/main.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/fullcalendar@5/main.min.js"></script>
+    <script src="https://unpkg.com/@fullcalendar/daygrid/main.min.js"></script>
 
     <title>Services</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="index.html">
-            <img src="../img/logo-jpg.jpg" alt="logo" style="width: 30px; height: 30px;">
-        </a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <!-- <a class="navbar-brand" href="index.html">
+              <img src="../img/logo-jpg.jpg" alt="logo" style="width: 30px; height: 30px;">
+          </a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+          </li>
+        </ul>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Book
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="packages.html">Packages</a>
-          </ul>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Book</button>
-        </div>
-      </nav>
+      </div>
+    </nav>
 
     <div class="container mt-5">
-        <div class="row">
-            <!-- Catering Service -->
-            <div class="col-md-4">
-                <div class="card-services" style="display: flex; flex-direction: column; height: 100%;">
-                    <div class="card-header-services">
-                        <h3>Catering Service</h3>
-                    </div>
-                    <div class="card-body" style="flex: 1;">
-                        <p class="card-body-text">Offering bespoke catering for any event, we ensure a remarkable dining experience with our skilled team and customized menus</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Conferences </li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Birthdays </li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Anniversaries</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Executive Lunches</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Corporate Events</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Graduations</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Weddings</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn-outline-success m-3">Book</button>
-                </div>  
+      <div class="row">
+        <!-- Catering Service -->
+        <div class="col-md-4">
+          <div
+            class="card-services"
+            style="display: flex; flex-direction: column; height: 100%"
+          >
+            <div class="card-header-services">
+              <h3>Catering Service</h3>
             </div>
-    
-            <!-- Institutional Dining -->
-            <div class="col-md-4">
-                <div class="card-services" style="display: flex; flex-direction: column; height: 100%;">
-                    <div class="card-header-services">
-                        <h3>Institutional Dining</h3>
-                    </div>
-                    <div class="card-body" style="flex: 1;">
-                        <p class="card-body-text">Providing nutritious, flavorful dining options tailored for institutions. Our menus are crafted to meet diverse dietary preferences</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i> Cafeteria management</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i> Business menus</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i> Executive Chef</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i> Nutritionist</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i> Custom menus in five-week cycles</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn-outline-success m-3">Book</button>
-                </div>
+            <div class="card-body" style="flex: 1">
+              <p class="card-body-text">
+                Offering bespoke catering for any event, we ensure a remarkable
+                dining experience with our skilled team and customized menus
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Conferences
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Birthdays
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Anniversaries
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Executive
+                  Lunches
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Corporate
+                  Events
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Graduations
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Weddings
+                </li>
+              </ul>
             </div>
-            
-    
-            <!-- Complementary Services -->
-            <div class="col-md-4">
-                <div class="card-services" style="display: flex; flex-direction: column; height: 100%;">
-                    <div class="card-header-services">
-                        <h3>Complementary Services</h3>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-body-text">Enhance your event with our comprehensive support services. From elegant decor to lively entertainment, we manage every detail</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Table and chair rental</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Linens and decoration</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Music and entertainment</li>
-                            <li class="list-group-item"><i class="fa fa-check" style="color:green;"></i>  Comprehensive event consulting</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn-outline-success m-3">Book</button>
-                </div>
-            </div>
+            <button type="button" class="btn btn-outline-success m-3">
+              Book
+            </button>
+          </div>
         </div>
-    </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">Event Calendar</h2>
-            </div>
-    </div>
-    <div id='calendar' class="m-3"></div>
 
-<!-- Modal -->
-<div class="modal fade" id="eventDetailsModal" tabindex="-1" aria-labelledby="eventDetailsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="eventDetailsModalLabel">Detalles del Evento</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <!-- Institutional Dining -->
+        <div class="col-md-4">
+          <div
+            class="card-services"
+            style="display: flex; flex-direction: column; height: 100%"
+          >
+            <div class="card-header-services">
+              <h3>Institutional Dining</h3>
+            </div>
+            <div class="card-body" style="flex: 1">
+              <p class="card-body-text">
+                Providing nutritious, flavorful dining options tailored for
+                institutions. Our menus are crafted to meet diverse dietary
+                preferences
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Cafeteria
+                  management
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Business
+                  menus
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Executive
+                  Chef
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Nutritionist
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Custom menus
+                  in five-week cycles
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-outline-success m-3">
+              Book
+            </button>
+          </div>
         </div>
-        <div class="modal-body">
-          <!-- Los detalles del evento se insertarán aquí -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+        <!-- Complementary Services -->
+        <div class="col-md-4">
+          <div
+            class="card-services"
+            style="display: flex; flex-direction: column; height: 100%"
+          >
+            <div class="card-header-services">
+              <h3>Complementary Services</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-body-text">
+                Enhance your event with our comprehensive support services. From
+                elegant decor to lively entertainment, we manage every detail
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Table and
+                  chair rental
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Linens and
+                  decoration
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Music and
+                  entertainment
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" style="color: green"></i> Comprehensive
+                  event consulting
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-outline-success m-3">
+              Book
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-    
-<!-- Bootstrap JS and jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Event Calendar</h2>
+        </div>
+      </div>
+      <div id="calendar" class="m-3"></div>
+    </div>
 
-</body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="eventDetailsModal"
+      tabindex="-1"
+      aria-labelledby="eventDetailsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eventDetailsModalLabel">
+              Event Details
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        &copy;2024 Royal Banquets | @Josué Matamoros @Isaac Ramirez @Hector
+        Caravaca
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
 </html>
