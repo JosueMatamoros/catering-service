@@ -13,18 +13,7 @@ body {
     overflow: hidden;
 }
 
-.carousel .list .item .content::before {
-    content: "";
-    position: absolute;
-    top: 48%;
-    left: 5%;
-    right: 44%;
-    bottom: 0%;
-    z-index: -1;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-}
+
 
 
 .carousel .list .item .content {
