@@ -44,15 +44,148 @@ document.addEventListener('DOMContentLoaded', function() {
         themeSystem: 'bootstrap', 
         initialView: 'dayGridMonth',
         events: [
-            { title: 'Evento 1', date: '2024-03-01', extendedProps: { description: 'Descripción del Evento 1' } },
-            { title: 'Evento 2', date: '2024-03-02', extendedProps: { description: 'Descripción del Evento 2' } },
-            { title: 'Evento 3', date: '2024-03-03', extendedProps: { description: 'Descripción del Evento 3' } },
-            { title: 'Evento 4', date: '2024-03-05', extendedProps: { description: 'Descripción del Evento 4' } },
-            { title: 'Evento 5', date: '2024-03-05', extendedProps: { description: 'Descripción del Evento 5' } },
-            { title: 'Evento 6', date: '2024-03-15', extendedProps: { description: 'Descripción del Evento 6' } },
-            { title: 'Evento 7', date: '2024-03-20', extendedProps: { description: 'Descripción del Evento 7' } }
-           
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-01', 
+                extendedProps: { 
+                    description: `Lugar: Salón Esplendoroso. Hora: 15:00`
+                } 
+            },
+            { 
+                title: 'Oceanic Delights', 
+                date: '2024-03-03', 
+                extendedProps: { 
+                    description: `Lugar: Espacio Festivo. Hora: 17:00`
+                } 
+            },
+            { 
+                title: 'Tico Tastes', 
+                date: '2024-03-05', 
+                extendedProps: { 
+                    description: `Lugar: Batara. Hora: 8:30`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-07', 
+                extendedProps: { 
+                    description: `Lugar: Salón de las Estrellas. Hora: 19:00`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-10', 
+                extendedProps: { 
+                    description: `Lugar: Sala Brillante. Hora: 14:00`
+                } 
+            },
+            { 
+                title: 'Oceanic Delights', 
+                date: '2024-03-12', 
+                extendedProps: { 
+                    description: `Lugar: Salón Esplendoroso. Hora: 16:30`
+                } 
+            },
+            { 
+                title: 'Tico Tastes', 
+                date: '2024-03-15', 
+                extendedProps: { 
+                    description: `Lugar: Espacio Festivo. Hora: 20:00`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-18', 
+                extendedProps: { 
+                    description: `Lugar: Sala de Celebraciones. Hora: 15:30`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-20', 
+                extendedProps: { 
+                    description: `Lugar: Salón de las Estrellas. Hora: 18:00`
+                } 
+            },
+            { 
+                title: 'Oceanic Delights Catering', 
+                date: '2024-03-22', 
+                extendedProps: { 
+                    description: `Lugar: Sala Brillante. Hora: 19:00`
+                } 
+            },
+            { 
+                title: 'Tico Tastes', 
+                date: '2024-03-24', 
+                extendedProps: { 
+                    description: `Lugar: Salón Esplendoroso. Hora: 16:00`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-26', 
+                extendedProps: { 
+                    description: `Lugar: Espacio Festivo. Hora: 17:30`
+                } 
+            },
+            { 
+                title: 'Oceanic Delights', 
+                date: '2024-03-28', 
+                extendedProps: { 
+                    description: `Lugar: Sala de Celebraciones. Hora: 18:30`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-29', 
+                extendedProps: { 
+                    description: `Lugar: Salón de las Estrellas. Hora: 14:30`
+                } 
+            },
+            { 
+                title: 'Oceanic Delights', 
+                date: '2024-03-31', 
+                extendedProps: { 
+                    description: `Lugar: Sala Brillante. Hora: 19:30`
+                } 
+            },
+            { 
+                title: 'Tico Tastes', 
+                date: '2024-03-01', 
+                extendedProps: { 
+                    description: `Lugar: Salón Esplendoroso. Hora: 15:00`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-03', 
+                extendedProps: { 
+                    description: `Lugar: Espacio Festivo. Hora: 17:00`
+                } 
+            },
+            { 
+                title: 'Oceanic Delights', 
+                date: '2024-03-05', 
+                extendedProps: { 
+                    description: `Lugar: Sala de Celebraciones. Hora: 18:30`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-07', 
+                extendedProps: { 
+                    description: `Lugar: Coquito. Hora: 21:00`
+                } 
+            },
+            { 
+                title: 'Le Carné Exquis', 
+                date: '2024-03-10', 
+                extendedProps: { 
+                    description: `Lugar: Sala Brillante. Hora: 14:00`
+                } 
+            }
         ],
+            
         eventClick: function(info) {
             var eventObj = info.event;
             $('#eventDetailsModalLabel').text(eventObj.title);
