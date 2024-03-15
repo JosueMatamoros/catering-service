@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Font awesome--> 
     <script src="https://kit.fontawesome.com/bca5411306.js" crossorigin="anonymous"></script>
 
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>Fisherman´s Delight</title>
+
+    <!--Don't move this style to css because I need this configuration just for this section -->
+    <style>
+      .nav-link {
+        color: white !important;
+      }
+    </style>
 </head>
 <body>
+  <header>
+    <div class="header">
+      <img id="bg-img" src="../../img/sea-food-img/Main.webp" alt="bg-video" width="100%">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="../img/carousel-images/logo.png" alt="logo" style="width: 30px; height: 30px;">
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="../services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About us</a>
+              <a class="nav-link" href="../about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="packages.html">Packages</a>
+              <a class="nav-link" href="../packages.html">Packages</a>
           </ul>
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="cart.html">
@@ -41,30 +52,12 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Book</button>
         </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-      <ol class="carousel-indicators">
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="../img/sea-food-img/fisherman´s-delight.png" alt="First catering">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Fisherman´s Delight</h5>
-            <p>Fisherman's Delight Catering immerses you in the fresh flavors of the sea, focusing on
-                quality and freshness. Specializing in freshly caught fish, each dish highlights
-                the excellence of seafood, ensuring an unforgettable culinary experience.
-            </p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+  </header>
+  <h5>Fisherman´s Delight</h5>
+  <p>Fisherman's Delight Catering immerses you in the fresh flavors of the sea, focusing on
+      quality and freshness. Specializing in freshly caught fish, each dish highlights
+      the excellence of seafood, ensuring an unforgettable culinary experience.
+  </p>
     <div class="container py-5">
       <div class="row">
         <div class="col-12">
@@ -77,7 +70,7 @@
           <div class="row mb-3">
               <div class="col-md-4">
                   <div class="card card-catering">
-                      <img src="../img/sea-food-img/baked-salmon.webp" class="card-img-top" alt="...">
+                      <img src="../../img/sea-food-img/baked-salmon.webp" class="card-img-top" alt="...">
                       <div class="card-body card-body-catering" style="flex: 1;">
                       <h5 class="card-title">Baked Salmon</h5>
                       <p class="card-text card-text-catering">Indulge in a fresh-from-the-oven salmon, perfectly baked to perfection and served with a side of tender asparagus, fluffy rice, and a crisp garden salad.</p>
@@ -93,7 +86,7 @@
               </div>
               <div class="col-md-4">
                   <div class="card card-catering">
-                      <img src="../img/sea-food-img/tilapia.webp" class="card-img-top" alt="...">
+                      <img src="../../img/sea-food-img/tilapia.webp" class="card-img-top" alt="...">
                       <div class="card-body card-body-catering" style="flex: 1;">
                       <h5 class="card-title">Golden Crispy Tilapia</h5>
                       <p class="card-text card-text-catering">Savor the delightful combination of succulent shrimp, tender octopus, and flavorful squid enveloped within a fluffy, golden-brown pancake.</p>
@@ -108,7 +101,7 @@
               </div>
               <div class="col-md-4">
                   <div class="card card-catering">
-                      <img src="../img/sea-food-img/sabalo.webp" class="card-img-top" alt="..."> 
+                      <img src="../../img/sea-food-img/sabalo.webp" class="card-img-top" alt="..."> 
                       <div class="card-body card-body-catering" style="flex: 1;">
                       <h5 class="card-title">Sabalo Supreme</h5>
                       <p class="card-text card-text-catering">Delight in the exquisite flavors of our Sabalo Supreme, a tantalizing dish featuring a tender and succulent fillet of freshly caught sabalo, expertly seasoned and fried to golden perfection. </p>
@@ -125,7 +118,7 @@
           <div class="row mb-3">
             <div class="col-md-4">
               <div class="card card-catering">
-                <img src="../img/sea-food-img/machaca.webp" class="card-img-top" alt="...">
+                <img src="../../img/sea-food-img/machaca.webp" class="card-img-top" alt="...">
                 <div class="card-body card-body-catering" style="flex: 1;">
                 <h5 class="card-title">Machaca with Eggs</h5>
                 <p class="card-text card-text-catering">Indulge in the comforting embrace of our Savory Machaca with Eggs, a beloved morning tradition that combines tender shreds of seasoned beef machaca with fluffy scrambled eggs, creating a hearty and satisfying meal. </p>
@@ -156,7 +149,7 @@
           </div>
           <div class="col-md-4">
               <div class="card card-catering">
-                <img src="../img/sea-food-img/fillet.webp" class="card-img-top" alt="...">
+                <img src="../../img/sea-food-img/fillet.webp" class="card-img-top" alt="...">
                 <div class="card-body card-body-catering" style="flex: 1;">
                 <h5 class="card-title">Grilled Fish Fillet</h5>
                 <p class="card-text card-text-catering">Indulge in our Grilled Fish Fillet, served alongside fragrant rice, tender beans, and a vibrant green salad. Each bite offers a harmonious blend of smoky grilled flavor and succulent fish, complemented by the freshness of the accompanying sides.</p>
