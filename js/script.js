@@ -196,3 +196,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calendar.render();
 });
+
+// New catering form 
+function addPackage() {
+    const packagesDiv = document.getElementById('packages');
+    const newPackage = packagesDiv.children[0].cloneNode(true);
+    newPackage.querySelectorAll('input, textarea, .dishes-container').forEach(input => {
+      if (input.tagName === 'DIV') {
+        input.innerHTML = ''; // 
+      } else {
+        input.value = '';
+      }
+    });
+    newPackage.querySelector('.addDishToPackage').addEventListener('click', addDishToPackage);
+    packagesDiv.appendChild(newPackage);
+  }
+  
+  function addDish() {
+    const menuDiv = document.getElementById('menu');
+    const newDish = menuDiv.children[0].cloneNode(true);
+    newDish.querySelectorAll('input').forEach(input => input.value = '');
+    menuDiv.appendChild(newDish);
+  }
+  
+  function addDishToPackage(event) {
+    const dishesContainer = event.target.nextElementSibling;
+    const newDish = document.createElement('div');
+    newDish.classList.add('dish-item');
+    newDish.innerHTML = `
+      <div class="form-row">
+        <div class="col">
+          <label>Dish Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col">
+          <label>Dish Price</label>
+          <input type="number" class="form-control" required>
+        </div>
+      </div>
+      <label>Dish Description</label>
+      <textarea class="form-control" rows="2" required></textarea>
+      <label>Dish Image</label>
+      <input type="file" class="form-control-file">
+    `;
+    dishesContainer.appendChild(newDish);
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.addDishToPackage').forEach(button => {
+      button.addEventListener('click', addDishToPackage);
+    });
+  });

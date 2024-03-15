@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Js -->
+<script src="../js/script.js"></script>
+
+<title>Catering Service Registration</title>
+
+<style>
+  body { padding-top: 20px; } 
+  .container { max-width: 800px; }
+  .package-item, .menu-item, .additional-services, .contact-info { margin-bottom: 15px; }
+  .form-row .col, .form-group { margin-bottom: 10px; }
+  .package-item, .menu-item { border: 1px solid #dee2e6; padding: 20px; border-radius: 5px; } 
+
+</style>
+</head>
+<body>
+
+<!-- Title -->
+<div class="container">
+  <h1>Welcome to Catering Service Registration</h1>
+  <form>
+    <h2>Catering Title</h2>
+    <div class="form-group">
+      <label for="cateringTitle">Title of the Catering Service</label>
+      <input type="text" class="form-control" id="cateringTitle" required>
+    </div>
+
+    <!--Contact section -->
+    <h2>Contact Information</h2>
+    <div class="form-row">
+      <div class="col">
+        <input type="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="col">
+        <input type="tel" class="form-control" placeholder="Phone Number" required>
+      </div>
+    </div>
+    
+    <!-- Predefined Packages-->
+    <h2>Predefined Catering Packages</h2>
+    <div id="packages">
+      <div class="package-item form-group">
+        
+        <label for="packageName">Package Name</label>
+        <input type="text" class="form-control" id="packageName" required>
+        
+        <label for="packageDescription">Package Description</label>
+        <textarea class="form-control" id="packageDescription" rows="2" required></textarea>
+        
+        <label for="packageImage">Package Image</label>
+        <input type="file" class="form-control-file" id="packageImage">
+        
+        <!-- Bottom to add another package -->
+        <button type="button" class="btn btn-outline-primary addDishToPackage mt-4">Add Dish to Package</button>
+        <div class="dishes-container"></div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-primary mt-2 mb-5" onclick="addPackage()">Add Another Package</button>
+    
+    <h2>General Menu of Dishes</h2>
+    <div id="menu">
+      <div class="menu-item form-group">
+        <div class="form-row">
+          <div class="col">
+            <label for="dishName">Dish Name</label>
+            <input type="text" class="form-control" id="dishName" required>
+          </div>
+          <div class="col">
+            <label for="dishPrice">Price</label>
+            <input type="number" class="form-control" id="dishPrice" required>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-primary mt-2 mb-5" onclick="addDish()">Add Another Dish</button>
+    
+    <h2>Additional Services</h2>
+    <div class="additional-services form-group">
+      <label for="additionalService">Service Name</label>
+      <input type="text" class="form-control" id="additionalService" required>
+    </div>
+    
+    <button type="submit" class="btn btn-outline-success mb-4">Submit Catering Service</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script>
+function addPackage() {
+  const packagesDiv = document.getElementById('packages');
+  const newPackage = packagesDiv.children[0].cloneNode(true);
+  newPackage.querySelectorAll('input, textarea, .dishes-container').forEach(input => {
+    if (input.tagName === 'DIV') {
+      input.innerHTML = ''; // 
+    } else {
+      input.value = '';
+    }
+  });
+  newPackage.querySelector('.addDishToPackage').addEventListener('click', addDishToPackage);
+  packagesDiv.appendChild(newPackage);
+}
+
+function addDish() {
+  const menuDiv = document.getElementById('menu');
+  const newDish = menuDiv.children[0].cloneNode(true);
+  newDish.querySelectorAll('input').forEach(input => input.value = '');
+  menuDiv.appendChild(newDish);
+}
+
+function addDishToPackage(event) {
+  const dishesContainer = event.target.nextElementSibling;
+  const newDish = document.createElement('div');
+  newDish.classList.add('dish-item');
+  newDish.innerHTML = `
+    <div class="form-row">
+      <div class="col">
+        <label>Dish Name</label>
+        <input type="text" class="form-control" required>
+      </div>
+      <div class="col">
+        <label>Dish Price</label>
+        <input type="number" class="form-control" required>
+      </div>
+    </div>
+    <label>Dish Description</label>
+    <textarea class="form-control" rows="2" required></textarea>
+    <label>Dish Image</label>
+    <input type="file" class="form-control-file">
+  `;
+  dishesContainer.appendChild(newDish);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.addDishToPackage').forEach(button => {
+    button.addEventListener('click', addDishToPackage);
+  });
+});
+</script>
+</body>
+</html>
